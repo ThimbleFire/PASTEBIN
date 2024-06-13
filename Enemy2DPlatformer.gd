@@ -27,9 +27,9 @@ enum Operations {
 
 #NOTE: packets may need to be defined in _ready()
 packets = {
-    Operations.CHASE : _coroutine_chase,
-    Operations.ATTACK : _coroutine_attack,
-    Operations.IDLE : _coroutine_idle
+    Operations.CHASE : process_chase,
+    Operations.ATTACK : process_attack,
+    Operations.IDLE : process_idle
 }
 
 var current_operation = Operations.NONE
@@ -39,11 +39,11 @@ func _process(delta):
     pass
 
 #NOTE: Apparently you can use `test_motion` to detect whether a motion (such as a jump) will result in a collision
-func _coroutine_chase(delta):
+func process_chase(delta):
     pass
 
-func _coroutine_attack(delta):
+func process_attack(delta):
     pass
 
-func _coroutine_idle(delta):
+func process_idle(delta):
     pass
