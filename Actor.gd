@@ -3,6 +3,7 @@ extends RigidBody2D
 # DIALOGUE
 var chat_head
 var chat_name
+#NOTE: consider using Dialogue Nodes plugin (https://godotengine.org/asset-library/asset/2400)
 var chat_script
 var can_talk
 
