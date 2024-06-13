@@ -1,6 +1,6 @@
 #NOTE: actors will be able to navigate the game world just like the player, this includes climbing scenery
 # grappling and sliding down walls.
-extends actor
+extends Actor
 
 #NOTE: I'm bored at work and just want to type something
 # I think what I want to make is a state machine that relies on a dictionary of operations
